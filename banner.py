@@ -1,9 +1,12 @@
 import random
-from colorama import Fore, Style
+from colorama import Fore, Style, init
+
+# Initialize colorama
+init(autoreset=True)
 
 ascii_fonts = [
-    f"""{Fore.RED}
-     ░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████████████▓▒░  
+    rf"""{Fore.RED}
+░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████████████▓▒░  
 ░▒▓█▓▒░       ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
 ░▒▓█▓▒░       ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
  ░▒▓██████▓▒░ ░▒▓███████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
@@ -12,7 +15,7 @@ ascii_fonts = [
 ░▒▓███████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
 {Style.RESET_ALL}
 """,
-    f"""{Fore.GREEN}
+    rf"""{Fore.GREEN}
          _______. __  ___  __  .___  ___. 
     /       ||  |/  / |  | |   \/   | 
    |   (----`|  '  /  |  | |  \  /  | 
@@ -21,7 +24,7 @@ ascii_fonts = [
 |_______/    |__|\__\ |__| |__|  |__| 
 {Style.RESET_ALL}
 """,
-    f"""{Fore.BLUE}
+    rf"""{Fore.BLUE}
       ██████  ██ ▄█▀ ██▓ ███▄ ▄███▓
 ▒██    ▒  ██▄█▒ ▓██▒▓██▒▀█▀ ██▒
 ░ ▓██▄   ▓███▄░ ▒██▒▓██    ▓██░
@@ -33,7 +36,7 @@ ascii_fonts = [
       ░  ░  ░    ░         ░   
 {Style.RESET_ALL}
 """,
-    f"""{Style.BRIGHT}
+    rf"""{Fore.CYAN}
     .▄▄ · ▄ •▄ ▪  • ▌ ▄ ·. 
 ▐█ ▀. █▌▄▌▪██ ·██ ▐███▪
 ▄▀▀▀█▄▐▀▀▄·▐█·▐█ ▌▐▌▐█·
@@ -41,7 +44,7 @@ ascii_fonts = [
  ▀▀▀▀ ·▀  ▀▀▀▀▀▀  █▪▀▀▀
 {Style.RESET_ALL}
 """,
-    f"""{Fore.YELLOW}
+    rf"""{Fore.YELLOW}
      ▄▀▀▀▀▄  ▄▀▀▄ █  ▄▀▀█▀▄    ▄▀▀▄ ▄▀▄ 
 █ █   ▐ █  █ ▄▀ █   █  █  █  █ ▀  █ 
    ▀▄   ▐  █▀▄  ▐   █  ▐  ▐  █    █ 
@@ -51,10 +54,31 @@ ascii_fonts = [
         ▐       ▐       ▐ ▐    ▐    
 {Style.RESET_ALL}
 """,
+    rf"""{Fore.MAGENTA}
+  ____  ___                           
+ 6MMMMb\`MM       68b                 
+6M'    ` MM       Y89                 
+MM       MM   __  ___ ___  __    __   
+YM.      MM   d'  `MM `MM 6MMb  6MMb  
+ YMMMMb  MM  d'    MM  MM69 `MM69 `Mb 
+     `Mb MM d'     MM  MM'   MM'   MM 
+      MM MMdM.     MM  MM    MM    MM 
+      MM MMPYM.    MM  MM    MM    MM 
+L    ,M9 MM  YM.   MM  MM    MM    MM 
+MYMMMM9 _MM_  YM.__MM__MM_  _MM_  _MM_
+{Style.RESET_ALL}
+""",
+    rf"""{Fore.RED}
+  )\.--.     .'( .'(  )\   )\  
+ (   ._.' ,')\  )\  )(  ',/ /  
+  `-.`.  (  '/ / ) (  )    (   
+ ,_ (  \  )   (  \  )(  \(\ \  
+(  '.)  )(  .\ \  ) \ `.) /  ) 
+ '._,_.'  )/  )/   )/     '.(  
+{Style.RESET_ALL}
+"""
 ]
 
-# Correct random picking
-ascii_art = random.choice(ascii_fonts)
-
-# Then print it
-print(ascii_art)
+if __name__ == "__main__":
+    ascii_art = random.choice(ascii_fonts)
+    print(ascii_art)
