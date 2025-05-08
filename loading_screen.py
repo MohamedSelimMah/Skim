@@ -46,7 +46,7 @@ def glitch_effect(name, glitch_times=10):
         print(' ' * center_pos + Fore.LIGHTYELLOW_EX + glitched + Style.RESET_ALL)
         time.sleep(0.05)
 
-if __name__ == "__main__":
+def loading_screen():
     clear_screen()
     type_text("[*] Starting up...")
     time.sleep(0.5)

@@ -107,6 +107,6 @@ MYMMMM9 _MM_  YM.__MM__MM_  _MM_  _MM_
 """,
 ]
 
-if __name__ == "__main__":
+def show_random_banner():
     ascii_art = random.choice(ascii_fonts)
     print(ascii_art)
