@@ -3,8 +3,7 @@ import cmd
 from colorama import Fore, Style
 
 class MyConsole(cmd.Cmd):
-    intro = Fore.GREEN + "Welcome to Skim Framework!" + Style.RESET_ALL
-    intro = Fore.GREEN + "Type help or ? to list commands." + Style.RESET_ALL
+    intro = Fore.GREEN + "Welcome to Skim Framework! \nType help  to list commands." + Style.RESET_ALL
     prompt = Fore.BLUE + "myconsole> " + Style.RESET_ALL
 
     def do_use(self, arg):
