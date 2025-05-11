@@ -1,7 +1,8 @@
 import time
-from banner import *
-from loading_screen import *
-from console import *
+from design.loading_screen import loading_screen
+from design.loading_screen import clear_screen
+from design.console import MyConsole
+from design.banner import show_random_banner
 def main():
     loading_screen()
     clear_screen()

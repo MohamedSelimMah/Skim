@@ -67,7 +67,7 @@ L    ,M9 MM  YM.   MM  MM    MM    MM
 MYMMMM9 _MM_  YM.__MM__MM_  _MM_  _MM_
 {Style.RESET_ALL}
 """,
-    rf"""{Fore.RED}
+    rf"""{Fore.LIGHTCYAN_EX}
   )\.--.     .'( .'(  )\   )\  
  (   ._.' ,')\  )\  )(  ',/ /  
   `-.`.  (  '/ / ) (  )    (   
@@ -130,7 +130,7 @@ MYMMMM9 _MM_  YM.__MM__MM_  _MM_  _MM_
  ▄████████▀    ███   ▀█▀ █▀    ▀█   ███   █▀  
                ▀                              
 {Style.RESET_ALL}
-""",rf"""{Fore.RED}
+""",rf"""{Fore.YELLOW}
  ▄▄▄▄▄▄▄▄▄▄▄  ▄    ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄       ▄▄ 
                                                  .         .           
    d888888o.   8 8888     ,88'  8 8888          ,8.       ,8.          
