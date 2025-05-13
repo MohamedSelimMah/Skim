@@ -1,4 +1,4 @@
-# console.py
+from Script import Port_Scanner
 import cmd
 from colorama import Fore, Style
 

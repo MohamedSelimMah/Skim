@@ -174,6 +174,5 @@ _                                   '       _'               ¯¯¯¯   '
 {Style.RESET_ALL}"""
 ]
 
-def show_random_banner():
-    ascii_art = random.choice(ascii_fonts)
-    print(ascii_art)
+ascii_art = random.choice(ascii_fonts)
+print(ascii_art)
